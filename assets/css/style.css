@@ -1,0 +1,184 @@
+:root{
+  --bg: #0b1020;
+  --card: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.12);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --accent: #6ee7ff;
+  --accent2: #a78bfa;
+}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1200px 700px at 15% 10%, rgba(110,231,255,0.22), transparent 60%),
+              radial-gradient(1000px 600px at 75% 20%, rgba(167,139,250,0.22), transparent 60%),
+              linear-gradient(180deg, var(--bg) 0%, #070a14 100%);
+  color: var(--text);
+}
+a{ color: var(--accent); text-decoration: none; }
+a:hover{ color: #b3f3ff; text-decoration: underline; }
+.navbar{
+  backdrop-filter: blur(10px);
+  background: rgba(7,10,20,0.55) !important;
+  border-bottom: 1px solid var(--border);
+}
+.nav-link{ color: var(--muted) !important; }
+.nav-link:hover{ color: var(--text) !important; }
+.badge-soft{
+  background: rgba(110,231,255,0.14);
+  color: var(--text);
+  border: 1px solid rgba(110,231,255,0.22);
+  font-weight: 600;
+}
+.badge-soft2{
+  background: rgba(167,139,250,0.14);
+  color: var(--text);
+  border: 1px solid rgba(167,139,250,0.22);
+  font-weight: 600;
+}
+.hero{
+  padding: 5.5rem 0 2.5rem;
+}
+.hero h1{
+  letter-spacing: -0.02em;
+  font-weight: 800;
+}
+.lead{
+  color: var(--muted);
+}
+.card-glass{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.35);
+}
+.section{
+  padding: 3rem 0;
+}
+.section-title{
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.kpi{
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.kpi strong{
+  color: var(--text);
+}
+hr.soft{
+  border: none;
+  border-top: 1px solid var(--border);
+  opacity: 1;
+}
+.btn-accent{
+  background: linear-gradient(135deg, rgba(110,231,255,0.95), rgba(167,139,250,0.95));
+  border: none;
+  color: #070a14;
+  font-weight: 800;
+}
+.btn-accent:hover{
+  filter: brightness(1.02);
+}
+.btn-outline-soft{
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.btn-outline-soft:hover{
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+.footer{
+  padding: 2.5rem 0;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+.mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.small-muted{
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.list-tight li{ margin-bottom: 0.35rem; }
+.pub-item{
+  padding: 0.9rem 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.16);
+}
+.pub-item:last-child{ border-bottom: none; }
+.video-frame{
+  aspect-ratio: 16/9;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+}
+
+
+/* Theme support (dark default). Toggle by setting data-theme="light" on <html> */
+html[data-theme="light"]{
+  --bg: #f7f8fc;
+  --card: rgba(12,18,40,0.05);
+  --border: rgba(12,18,40,0.12);
+  --text: rgba(12,18,40,0.92);
+  --muted: rgba(12,18,40,0.70);
+}
+html[data-theme="light"] body{
+  background: radial-gradient(1200px 700px at 15% 10%, rgba(110,231,255,0.25), transparent 60%),
+              radial-gradient(1000px 600px at 75% 20%, rgba(167,139,250,0.22), transparent 60%),
+              linear-gradient(180deg, var(--bg) 0%, #ffffff 100%);
+}
+html[data-theme="light"] .navbar{
+  background: rgba(255,255,255,0.65) !important;
+}
+html[data-theme="light"] .btn-outline-soft{
+  color: rgba(12,18,40,0.92);
+}
+html[data-theme="light"] .nav-link{ color: rgba(12,18,40,0.72) !important; }
+html[data-theme="light"] .nav-link:hover{ color: rgba(12,18,40,0.95) !important; }
+
+.avatar{
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.18);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+  flex: 0 0 auto;
+}
+html[data-theme="light"] .avatar{
+  border: 2px solid rgba(12,18,40,0.12);
+  box-shadow: 0 18px 50px rgba(12,18,40,0.12);
+}
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.affil-card{
+  display:flex;
+  gap: 0.9rem;
+  align-items:center;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+}
+.affil-card img{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+}
+
+.theme-toggle{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  font-weight: 700;
+}
+.theme-toggle:hover{
+  background: rgba(255,255,255,0.08);
+}

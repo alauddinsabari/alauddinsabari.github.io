@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alauddin Sabari — Applied Statistics & Data Science | AI & Software Security Research">
+  <title>Projects — Alauddin Sabari</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Alauddin Sabari</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="talk.html">Video</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+      </ul>
+        <div class="ms-lg-3 mt-3 mt-lg-0">
+          <button id="themeToggle" class="theme-toggle" type="button">Light</button>
+        </div>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1 class="section-title mb-2">Projects</h1>
+    <p class="lead">A mix of research prototypes and production-oriented builds.</p>
+
+    <div class="row g-4">
+      <div class="col-lg-6" id="mlblock">
+        <div class="card-glass p-4 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-bold fs-5">MLBlock</div>
+              <div class="small-muted">Interpretable ML + blockchain-inspired integrity for land valuation</div>
+            </div>
+            <span class="badge badge-soft2 rounded-pill px-3 py-2">XAI</span>
+          </div>
+          <hr class="soft my-3">
+          <ul class="list-tight">
+            <li>Built end-to-end pipeline: preprocessing → feature engineering → model training → evaluation.</li>
+            <li>Focused on robustness, interpretability, and uncertainty-aware decision making.</li>
+            <li>Documented assumptions, data behavior, and system design for reproducibility.</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge badge-soft rounded-pill px-3 py-2">Python</span>
+            <span class="badge badge-soft rounded-pill px-3 py-2">scikit-learn</span>
+            <span class="badge badge-soft2 rounded-pill px-3 py-2">SHAP / XAI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6" id="android">
+        <div class="card-glass p-4 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-bold fs-5">Android Permission & Security Analysis</div>
+              <div class="small-muted">Large-scale data + reasoning workflows for permission auditing</div>
+            </div>
+            <span class="badge badge-soft rounded-pill px-3 py-2">Security</span>
+          </div>
+          <hr class="soft my-3">
+          <ul class="list-tight">
+            <li>Pipeline concept: collect APK metadata → parse manifests → analyze permissions → label / score risk.</li>
+            <li>Supports research-style evaluation: baselines, error analysis, and clear reporting.</li>
+            <li>Designed to scale with reproducible scripts and structured outputs (CSV/JSON).</li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge badge-soft rounded-pill px-3 py-2">Python</span>
+            <span class="badge badge-soft2 rounded-pill px-3 py-2">Static analysis</span>
+            <span class="badge badge-soft rounded-pill px-3 py-2">LLM labeling</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-glass p-4 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-bold fs-5">AI-Assisted Rare Disease Diagnosis</div>
+              <div class="small-muted">Learning from limited, heterogeneous clinical data</div>
+            </div>
+            <span class="badge badge-soft2 rounded-pill px-3 py-2">NLP + CV</span>
+          </div>
+          <hr class="soft my-3">
+          <ul class="list-tight">
+            <li>Preprocessing pipelines for clinical text, medical images, and patient records.</li>
+            <li>NLP for extracting structured signals from unstructured notes; CV for imaging patterns.</li>
+            <li>Emphasis on reliability, interpretability, and clinical relevance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card-glass p-4 h-100">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <div class="fw-bold fs-5">Automated Data Processing Pipelines</div>
+              <div class="small-muted">Extraction + cleaning + traceable datasets for modeling</div>
+            </div>
+            <span class="badge badge-soft rounded-pill px-3 py-2">Data Eng</span>
+          </div>
+          <hr class="soft my-3">
+          <ul class="list-tight">
+            <li>Automated extraction using Python + Selenium from dynamic web sources.</li>
+            <li>Reusable workflows for quality, consistency, and traceability.</li>
+            <li>Outputs prepared for EDA, modeling, and evaluation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-3 align-items-center">
+      <div class="col-md">
+        <div class="fw-semibold">Alauddin Sabari</div>
+        <div class="small-muted">Applied Statistics & Data Science · AI / ML integrated Application Development</div>
+      </div>
+      <div class="col-md-auto">
+        <div class="small-muted">© <span id="y"></span> · Alauddin Sabari</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
+
